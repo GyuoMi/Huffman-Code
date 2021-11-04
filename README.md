@@ -1,7 +1,7 @@
 # Huffman-Code
 An encoder and decoder that works with double digit frequencies\
 These two files can be run as a pipe in the terminal, so the output from the encoder will be used as the input for the decoder.\
-The decoder accepts 3 lines total: 2 lines to build a binary tree and 1 line for the Huffman Encoded string.\
+The decoder accepts 3 lines total: 2 lines to build a binary tree and 1 line for the Huffman Encoded string.
 
 Input for the decoder is as follow:\
 The quick brown fox jumps over the lazy dog\
