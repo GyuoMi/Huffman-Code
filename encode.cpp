@@ -16,21 +16,20 @@ public:
 };
 
 // We use this to order the heap
-//comparator function to order p_queue
+// comparator function to order p_queue
 struct cmp
 {
-	bool operator()(TreeNode *&l,TreeNode *&r)
-	{
-		// item at front of priority queue will have the lowest freq
-		// return l->frequency > r->frequency;
+    bool operator()(TreeNode *&l, TreeNode *&r)
+    {
+        // item at front of priority queue will have the lowest freq
+        // return l->frequency > r->frequency;
         if (l->frequency > r->frequency)
             return true;
         if (l->frequency == r->frequency)
             return l->value > r->value;
-        
+
         return false;
-	}
-    
+    }
 };
 
 TreeNode *node_alloc(char c, int freq)
