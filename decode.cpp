@@ -58,7 +58,7 @@ void decode(TreeNode* root, int &index, string str)
 		return;
 	}
 
-	// found a leaf node
+	// Traverse to the leaf node
 	if (!root->left && !root->right)
 	{
 		cout << root->value;
@@ -123,8 +123,3 @@ int main()
     createTree(freq, encoded);
     return 0;
 }
-/*
-  a b e h l o r s t y   
-7 2 1 7 4 4 1 1 8 1 1 
-100100011110000110111011110001101111110010000110111011111001011000111110101010001111000110111111001011001111010000
-*/
